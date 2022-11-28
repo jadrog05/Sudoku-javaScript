@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+        <link rel="stylesheet" href="styles.css">
+        <script type="module" src="script.js"></script>
+        <script type="module" src="./components/sudokuGenerator.js"></script>
+    </head>
+    <body>
+        
+        <h1>Sudoku</h1>
+        
+        <hr id="top-line">
+        <button id="menu-btn" >Main Menu</button> 
+
+        <div id="game-div" class="screen">
+            
+            <h2 id = "errors">0</h2>
+
+            <!-- 9x9 board -->
+            <div id="board"></div>
+            <br>
+            <div id="digits"></div>
+        </div>
+
+        <div id="htp-div" class="screen">
+            <h2>How To Play</h2>
+            <p>The goal of sudoku is simple: 
+            <b>To fill in the numbers 1-9 exactly once in every row, column, and 3x3 region.</b> 
+            For example, look at the left puzzle and compare it to the solved version on the right. 
+            Notice that every row, column and 3x3 region contain every number from 1-9 exactly once.</p>
+
+            <img src="./images/sudoku_unsolved.png"><img src="./images/sudoku_solved.png">
+        </div>
+    </body>
+
+</html>
+
